@@ -12,6 +12,11 @@
       {% include projects.html %}
     </div>
 
+    {% if site.currents %}
+      <div class="my-6">
+        {% include currents.html %}
+      </div>
+    {% endif %}
     {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
