@@ -1,0 +1,95 @@
+<style type="text/css" media="screen">
+/* Setup a reasonable default font */
+body {
+ font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif
+}
+
+/* Style all select, textareas and input types except color, radio, checkbox */
+input:not([type=color]):not([type=radio]):not([type=checkbox]), select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style textarea elements */
+textarea {
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* increase the size of the select element to match others */
+select {
+  height: 4em;
+}
+
+/* add some space between the radio options*/
+input[type=radio] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* add some space between the checkbox options*/
+input[type=checkbox] {
+  margin-right: 10px;
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+    background-color: #14b2cf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+button[type=submit]:hover {
+    background-color: #1091A9;
+}
+
+/* Style the reset button with a specific background color etc */
+button[type=reset] {
+    background-color: #ddd;
+    color: #cd4747;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+button[type=reset]:hover {
+    background-color: #A72600;
+    color: white;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+</style>
+
+<form accept-charset="UTF-8" action="https://formkeep.com/f/ab0d18b40760" method="POST" target="_blank" class="container">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="John Smith"><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com"><br><br>
+    <label for="tel">Phone Number</label>
+    <input type="tel" id="tel" name="tel" placeholder="555-123-4567"><br><br>   
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Reason for contacting us" rows="5"></textarea><br><br>
+    <input type="hidden" name="subscribe" value="no">
+    <br><br>
+    <input type="hidden" name="utf8" value="✓">
+    <button type="submit">Submit</button>
+    <button type="reset">Clear Values</button>
+  </form>
