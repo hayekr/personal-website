@@ -39,14 +39,14 @@ social_media:
   # medium: @your_username
    stackoverflow: 10626864
   # telegram: your_username
-   twitter: bobbyhayek
+  # twitter: bobbyhayek
   # youtube: your_username
   # vk: your_username
 
 currents:
   - name: Glave.io
     web_url: http://glave.io
-    image_url: http://glave.io/static/img/glave_logo_ISO_LG.png
+    image_url: https://glave.io/static/img/logo/glave_logo_ISO_LG.png
 
 topics:
   - name: Flask
